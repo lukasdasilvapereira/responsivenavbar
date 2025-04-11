@@ -7,6 +7,13 @@
     font-family: "Poppins";
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 body {
     background-image: url(photo-1485470733090-0aae1788d5af.jpg);
     background-size: cover; /* Faz a imagem cobrir toda a tela */
@@ -15,4 +22,67 @@ body {
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
     overflow-y: hidden;
+}
+
+.open,.close {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+}
+
+.title {
+    color: white;
+}
+
+.header-links {
+    color: white;
+    font-size: 1.2em;
+    transition: 0.4s ease;
+}
+
+.header-links:hover {
+    color: orange;
+}
+
+.button {
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 8px;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.button:hover {
+    background-color: orangered;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -80px;
+}
+
+.tito {
+    color: white;
+    font-size: 3em;
+}
+
+.descricao {
+    color: white;
+    max-width: 500px;
+    text-align: center;
 }
