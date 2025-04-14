@@ -90,10 +90,14 @@ body {
 @media screen and (max-width: 761px) {
     .header-list {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        margin: 28px;
     }
 
     .button {
         display: none;
+        position: absolute;
     }
 
     .open {
@@ -108,12 +112,15 @@ body {
     }
 
     .close {
-        display: block;
+        display: none;
         position: absolute;
         right: 10px;
         top: 10px;
         color: white;
         padding: 20px 30px;
         font-size: 1.2em;
+        background-color: rgba(128, 128, 128, 0.39);
+        height: 300px;
+        width: 300px;
     }
 }
